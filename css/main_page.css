@@ -1,0 +1,108 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+}
+body{
+    max-height: 1024px;
+    font-family: Circe, sans-serif;
+}
+#background{
+    height: 100%;
+    width: 99%;
+    /*background-image: url('../images/bg_main_page.jpg');*/
+    position: absolute;
+    z-index: 0;
+    transition:all .3s linear;
+}
+
+/*.bg_main{*/
+/*    background-image: url('../images/bg_main_page.jpg');*/
+/*    !*filter: blur(3px);*!*/
+/*    !*transform: scale(1.02);*!*/
+
+/*}*/
+/*.bg_shop{*/
+/*    background-image: url("../images/bg_main_shop.jpg");*/
+/*    opacity: 100%;*/
+/*    !*transisition: opacity 0.1s linear;*!*/
+/*}*/
+/*.bg_prod{*/
+/*    background-image: url("../images/bg_main_prod.jpg");*/
+/*}*/
+
+.main_page{
+    width: 100%;
+    height: 90vh;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 120px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    line-height: 0.8;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 35%;
+    /*margin-top: 150px;*/
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    /*width: 500px;*/
+    /*height: 300px;*/
+    width: 25%;
+    height: 100%;
+    min-width: 300px;
+    min-height: 200px;
+    background: white;
+    opacity: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 46px;
+    color: #000;
+}
+
+.logo{
+    width: 100px;
+    opacity: 100%;
+}
+#btn_shop:hover{
+    transition: all 0.5s linear;
+    transition: color 0s linear;
+    background-color: black;
+    color: white;
+    opacity: 90%;
+}
+#btn_prod:hover{
+    transition: all 0.5s linear;
+    transition: color 0.2s linear;
+    background-color: black;
+    color: white;
+    opacity: 90%;
+
+}
+/*.button {*/
+
+/*}*/
+/*.btn-prod{*/
+/*    margin-left: 100px;*/
+/*}*/
+/*.btn-shop{*/
+/*    margin-right: 100px;*/
+/*}*/
+
