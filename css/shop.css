@@ -167,7 +167,7 @@ h2{
     display: flex;
     justify-content: space-around;
     /*position: relative;*/
-
+    align-items: center;
     margin: 150px 0 100px;
     flex-wrap: wrap;
     /*height: 50%;*/
@@ -217,10 +217,11 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     margin-bottom: 50px;
 }
 .bouquet{
-    width: 180px;
+    width: 170px;
 
     display: flex;
     flex-direction: column;
@@ -309,10 +310,12 @@ h2{
     }
     .navigation{
         margin: 50px 0 50px;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     .nav_but{
-        width: 200px;
-        height: 60px;
+        width: 250px;
+        height: 70px;
         font-size: 30px;
     }
     .back_button{
