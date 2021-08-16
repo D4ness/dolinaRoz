@@ -26,7 +26,7 @@ header{
     /*background: url("../images/bg_main_shop.jpg") no-repeat center/cover ;*/
     overflow: hidden;
     position: relative;
-    background-color: saddlebrown;
+    background-color: #48211A;
     height: 100vh;
 }
 
@@ -67,15 +67,18 @@ header{
     color: #AED2C7;
     z-index: 5;
     cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.1s linear;
 }
 #back_top:hover{
-    text-shadow: 0px 2px 3px #000;
-}
-.show_btn{
+    /*text-shadow: 0px 2px 3px #000;*/
     opacity: 1;
 }
+.show_btn{
+    display: block;
+}
 .hide_btn{
-    opacity: 0;
+    display: none;
 }
 h1{
     padding-top: 40px;
@@ -122,7 +125,12 @@ h2{
     left: 3px;
     cursor: pointer;
 }
-
+.tittle{
+    font-weight: normal;
+    font-size: 70px;
+    margin-top: 30px;
+    font-weight: 700;
+}
 .info_tittle_block{
     display: flex;
     flex-direction: row;
@@ -151,4 +159,25 @@ h2{
 }
 .info_img{
     height: 300px;
+}
+.sorts_container{
+    margin-top: 50px;
+}
+.sorts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sort{
+    width: 200px;
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sort-image{
+    width: 200px;
+}
+.sort-name{
+    font-size: 25px;
 }

@@ -32,14 +32,14 @@
                     </div>
                 </a>
 
-                <a href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" class="whatsapp_button">
+                <a target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" class="whatsapp_button">
                     WhatsApp
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
             <div class="mainpage_content">
                 <div class="mainpage_tittles">
-                    <h1>Долина роз</h1>
+                    <h1>Долина Роз</h1>
                     <h2>Цветочный салон</h2>
                 </div>
                 <div class="navigation">
@@ -59,143 +59,282 @@
 <section id="Букеты">
         <div class="container">
             <div class="bouq_tittle tittle">Букеты</div>
-            <div class="bouquets">
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Aqua_bouquet.jpg" alt="Букет роз Аква">
+            <div class="tabs_container">
+                <input class="input" type="radio" name="tabs" id="tab_mono" checked />
+                <input class="input" type="radio" name="tabs" id="tab_mixed"/>
+                <label class="tab" for="tab_mono">Монобукеты</label>
+                <label class="tab" for="tab_mixed">Сборные букеты</label>
+                <div class="tab-content tab-content_mono">
+                    <div class="bouquets">
 
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Аква</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
+                        <div class="bouquet" onmouseover="showBouquetInfo(this)">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Aqua_bouquet.jpg" alt="Букет роз Аква">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Аква</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Ревивал.jpg" alt="Букет роз Ревивал">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Ревивал</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Аваланш.jpg" alt="Букет роз Аваланш">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Аваланш</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Вау.jpg" alt="Букет роз Вау">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Вау</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Гран%20При.jpg" alt="Букет роз Гран При">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Гран При</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Илиос.jpg" alt="Букет роз Илиос">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Илиос</div>
+                        </div>
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Мисс%20Пигги.jpg" alt="Букет роз Мисс Пигги">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Мисс Пигги</div>
+
+
+                        </div>
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Пич%20Аваланш.jpg" alt="Букет роз Пич Аваланш">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Пич Аваланш</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Ред-Наоми.jpg" alt="Букет роз Ред Наоми">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Ред Наоми</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Русская%20Красота.jpg" alt="Букет роз Русская Красота">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Русская Красота</div>
+                        </div>
+
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Фиеста.jpg" alt="Букет роз Фиеста">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Фиеста</div>
+                        </div>
+                        <div class="bouquet">
+                            <div class="bouquet_image">
+                                <img class="bouquet_image" src="images/bouquets/Талея.jpg" alt="Букет роз Талея">
+                            </div>
+                            <div class="bouquet-info_block">
+                                <div class="bouquet-info_text">
+                                    <div class="bouquet-info_price">Букет 25 роз 60 см - <b>1900 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 51 роза 60 см - <b>3820 ₽</b><br></div>
+                                    <div class="bouquet-info_price">Букет 101 роза 60 см - <b>8888 ₽</b><br></div>
+                                    <a class="whatsapp_button bouquet-info_price" target="_blank" href="https://wa.me/79221961526?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%BE%D1%81%D1%8C%20%D0%B1%D1%8B%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%F0%9F%98%8A" >
+                                        Заказать в WhatsApp
+                                        <i class="fab fa-whatsapp whatsapp_bouquet"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bouquet_name">Розы Талея</div>
+                        </div>
+                        </div>
                     </div>
 
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Ревивал.jpg" alt="Букет роз Ревивал">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Ревивал</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Аваланш.jpg" alt="Букет роз Аваланш">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Аваланш</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Вау.jpg" alt="Букет роз Вау">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Вау</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Гран%20При.jpg" alt="Букет роз Гран При">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Гран При</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Илиос.jpg" alt="Букет роз Илиос">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Илиос</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Мисс%20Пигги.jpg" alt="Букет роз Мисс Пигги">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Мисс Пигги</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Пич%20Аваланш.jpg" alt="Букет роз Пич Аваланш">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Пич Аваланш</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Престиж.jpg" alt="Букет роз Престиж">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Престиж</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
-
-                </div>
-                <div class="bouquet">
-                    <div class="bouquet_image">
-                        <img class="bouquet_image" src="images/bouquets/Ревивал.jpg" alt="Букет роз Ревивал">
-
-                    </div>
-                    <div class="bouquet_text">
-                        <div class="bouquet_tittle">Букет 101 роза Ревивал</div>
-                        <div class="bouquet_price"><b>8888 р.</b></div>
-                    </div>
+                <div class="tab-content tab-content_mixed">
+                    2"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
                 </div>
             </div>
-
-<!--        <a href= "https://wa.me/79024432142?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BF%D0%B5%D1%80%D0%B5%D1%88%D1%91%D0%BB%20%D1%81%20QR-%D0%BA%D0%BE%D0%B4%D0%B0." target="_blank"><img src="http://qrcoder.ru/code/?https%3A%2F%2Fwa.me%2F79024432142%3Ftext%3D%25D0%2597%25D0%25B4%25D1%2580%25D0%25B0%25D0%25B2%25D1%2581%25D1%2582%25D0%25B2%25D1%2583%25D0%25B9%25D1%2582%25D0%25B5%252C%2520%25D0%25BF%25D0%25B5%25D1%2580%25D0%25B5%25D1%2588%25D1%2591%25D0%25BB%2520%25D1%2581%2520QR-%25D0%25BA%25D0%25BE%25D0%25B4%25D0%25B0.&4&0" width="196" height="196" border="0" title="QR код"></a>-->
+        </div>
     </div>
 </section>
 <section class="delivery" id="Доставка">
     <div class="container">
         <div class="deli_tittle tittle">Доставка</div>
+        <div class="deli_content">
+        Доставка в Екатеринбурге с 9:00 до 20:00 с интервалом прибытия курьера 2 часа<br><br>
+        Стоимость доставки с 9:00 до 11:00 - 450р.<br><br>
+        Ближайшие районы 1-6 км - 250р. <br>от 2500р - бесплатно<br><br>
+        Отдаленные районы 7-13 км - 350р. <br>от 3500р - бесплатно<br><br>
+        От 14 км по тарифу такси в указанный временной интервал
+        </div>
     </div>
 </section>
 <section class="contacts" id="Контакты">
     <div class="container">
         <div class="contact_tittle tittle">Контакты</div>
-        <p class="contact_text">
-            Наше официальное представительство в Екатеринбурге:<br>
-            <b>ул. Авиационная 80<br>
-            телефон: +7(922) 196-1526</b><br>
-            Шикарные розы Вы можете приобрести <b>каждый день с 8.00-19.00<br>
-            по адресу:</b> Алапаевский район, село Арамашево, ул. Пушкарева, 21<br>
-            Без перерывов и выходных.
-        </p>
-        <div class="map_container">
-            <img id="map" src="images/map.png">
+        <div class="contact_list">
+            <div class="contact-item">
+                <div class="contact-item_type"><i class="fas fa-phone-alt icon-width"></i>  Телефон</div>
+                <div class="space_between"></div>
+                <div class="contact-item_value"><a href="tel:+7922196152">+7(922) 196-1526</a></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-item_type"><i class="far fa-envelope icon-width"></i>  Почта</div>
+                <div class="contact-item_value"><a href="mailto:dolinaroz2021@gmail.com">dolinaroz2021 @gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-item_type"><i class="fas fa-map-marker-alt icon-width"></i>     Адрес</div>
+                <div class="contact-item_value"><a href="https://yandex.ru/maps/org/dolina_roz/106864385046/" target="_blank">Екатеринбург, ул. Авиационная 80</a></div>
+            </div>
         </div>
-
+        <div class="map_container">
+            <img id="map" src="images/map.jpg">
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
     </div>
 </section>
 </body>

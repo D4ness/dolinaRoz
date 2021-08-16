@@ -61,5 +61,12 @@ window.addEventListener(`resize`, event => {
         console.log(bgVideo);
 }, false);
 
+// Инфо о букетах
+function showBouquetInfo(bouquet){
+        console.log(bouquet.innerHTML);
 
-//console.log(bgVideo);
+}
+
+$(document).ready(function (){
+        call(showBouquetInfo());
+});

@@ -6,9 +6,13 @@ function scrollTo(element){
     })
 }
 const nav_info = document.getElementById('nav_info');
-console.log(nav_info);
 const info = document.querySelector('#Информация');
-console.log(info);
 nav_info.addEventListener('click', () => {
     scrollTo(info);
+})
+
+const nav_sorts = document.getElementById('nav_sorts');
+const sorts = document.querySelector('#Сорта');
+nav_sorts.addEventListener('click', () => {
+    scrollTo(sorts);
 })

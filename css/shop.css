@@ -33,6 +33,7 @@ header{
     margin: 0 auto;
     padding: 0 50px;
 }
+        /*  Главная страница  */
 .header{
     /*background: url("../images/bg_main_shop.jpg") no-repeat center/cover ;*/
     overflow: hidden;
@@ -69,6 +70,7 @@ header{
 .main_content{
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 #main_container{
     /*position: absolute;*/
@@ -96,8 +98,10 @@ header{
     border-radius: 10px;
     width: 200px;
     height: 60px;
-    background-color: #FFA343;
-    opacity: 0.35;
+    /*background-color: #ffffff;*/
+    color: #AED2C7;
+
+    opacity: 0.4;
     font-size: 25px;
     transition: all 0.2s linear;
 }
@@ -120,15 +124,17 @@ header{
     color: #AED2C7;
     z-index: 5;
     cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.1s linear;
 }
 #back_top:hover{
-    text-shadow: 0px 2px 3px #000;
-}
-.show_btn{
     opacity: 1;
 }
+.show_btn{
+    display: block;
+}
 .hide_btn{
-    opacity: 0;
+    display: none;
 }
 .whatsapp_button{
     text-decoration: none;
@@ -136,14 +142,21 @@ header{
     z-index: 4;
     color: #AED2C7;
     font-size: 20px;
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}
+.whatsapp_button:hover{
+    opacity: 1;
 }
 .fa-whatsapp{
     font-size: 30px;
 }
 .mainpage_content{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    /*align-items: center;*/
     /*height: 100vh;*/
 }
 h1{
@@ -162,14 +175,14 @@ h2{
     font-size: 60px;
     z-index: 4;
 }
-
 .navigation{
     display: flex;
     justify-content: space-around;
     /*position: relative;*/
     align-items: center;
-    margin: 150px 0 100px;
+    /*margin: 150px 0 100px;*/
     flex-wrap: wrap;
+
     /*height: 50%;*/
 }
 .nav_but{
@@ -177,18 +190,18 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 100px;
+    width: 230px;
+    height: 80px;
     background-color: rgba(113,176,146,0.5);
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: normal;
     border-radius: 15px;
     transition: all 0.2s linear;
     position: relative;
     z-index: 4;
-    margin: 10px;
+    margin: 20px;
 }
 .nav_but:hover{
     color: black;
@@ -200,19 +213,48 @@ h2{
 
 .tittle{
     font-weight: normal;
-    font-size: 80px;
+    font-size: 70px;
     margin-top: 30px;
+    font-weight: 700;
 }
+        /*   Букеты   */
 .bouq_tittle{
     color: #71B092;
 }
-.delivery{
-    background-color: #71B092;
-}
-.deli_tittle{
-    color: white;
+.input{
+    opacity: 0;
     position: absolute;
+    top: 0;
+    left: 0;
 }
+.tabs_container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.tab-content{
+    width: 100%;
+    display: none;
+    /*padding: 20px;*/
+    background-color: #AED2C7;
+}
+.tab{
+    text-align: center;
+    padding: 20px;
+    flex-basis: 50%;
+    font-size: 35px;
+    color: #71B092;
+}
+#tab_mono:checked ~ label[for='tab_mono'],
+#tab_mixed:checked ~ label[for='tab_mixed']{
+    background-color: #AED2C7;
+}
+
+#tab_mono:checked ~ .tab-content_mono,
+#tab_mixed:checked ~ .tab-content_mixed{
+    display: block;
+}
+
 .bouquets{
     display: flex;
     flex-wrap: wrap;
@@ -221,27 +263,81 @@ h2{
     margin-bottom: 50px;
 }
 .bouquet{
-    width: 170px;
-
+    width: 230px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px 20px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    /*padding: 20px 0px 20px;*/
+    margin: 20px 15px 20px 15px;
+    transition: all 0.2s linear;
 }
+
 .bouquet_image{
-    width: 180px;
+    height: 280px;
+    width: 230px;
+    position: relative;
 }
-.bouquet_text{
+.bouquet-info_block{
+    position: absolute;
+    width: 230px;
+    margin-top: 180px;
+    display: none;
+    transition: all 0.2s;
+}
+.bouquet .bouquet-info_block{
+    transition: all 0.2s;
+}
+.bouquet:hover .bouquet-info_block{
+    display: block;
+}
+.bouquet-info_text{
+    /*margin-top: 150px;*/
+    background-color: rgba(174, 210, 199, 0.8);
+    width: 100%;
+    height: 100px;
     text-align: center;
-    color: black;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.bouquet-info_price{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+}
+.bouquet_name{
+    font-size: 24px;
+    text-align: center;
+}
+.whatsapp_bouquet{
+    font-size: 20px;
+}
+        /*   Доставка   */
 .delivery{
-    height: 500px;
+    background-color: #71B092;
+
+    position: relative;
 }
+.deli_tittle{
+    margin-top: 0;
+    padding-top: 30px    ;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.deli_content{
+    font-size: 30px;
+    text-align: right;
+    padding: 30px 0 30px 0;
+    color: white;
+}
+
+
+        /*    Контакты    */
 .contact_tittle{
     color: #71B092;
 }
@@ -251,17 +347,48 @@ h2{
     font-size: 30px;
     margin-top: 20px;
 }
+.contact_list{
+    font-size: 35px;
+    color: #71B092;
+    margin-top: 50px;
+}
+.contact-item a{
+    color: #71B092;
+    text-decoration: none;
+    border-bottom: 2px #71B092 solid;
+}
+.contact-item{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px ;
+}
+.contact-item_type{
+    width: 200px;
+    margin: 0 50px 20px 0px;
+}
+.icon-width{
+    /*width: 50px;*/
+}
 .map_container{
     display: flex;
-    justify-content: flex-end;
+    margin-left: 250px;
 }
 #map{
     width: 550px;
     border: 3px solid #71B092;
     margin: 30px 0 30px;
 }
+.contact-item_value{
+    line-height: 24px;
+}
 
+
+        /*   Адаптив   */
 @media (max-width: 1200px) {
+    .main_content{
+        height: auto;
+    }
+
     #bg_video{
         transform: scale(0.7);
     }
@@ -326,12 +453,21 @@ h2{
     .tittle{
         font-size: 35px;
     }
-
+    .deli_content{
+        font-size: 25px;
+    }
+    .contact_list{
+        font-size: 25px;
+    }
     #map{
-        width: 350px;
+        width: 450px;
     }
 }
 @media (max-width: 767px) {
+    .map_container{
+        justify-content: center;
+    }
+
     #bg_video{
         transform: scale(0.55);
     }
@@ -370,9 +506,14 @@ h2{
         height: 50px;
         font-size: 25px;
     }
-
+    .deli_content{
+        font-size: 15px;
+    }
     #map{
         width: 200px;
+    }
+    .map_container{
+        margin: 0;
     }
     .contact_text{
         font-size: 15px;
@@ -381,5 +522,20 @@ h2{
         bottom: 10px;
         right: 10px;
         font-size: 20px;
+    }
+    .contact-item{
+    }
+    .contact-item_type{
+        width: 100px
+    }
+    .contact-item_value {
+        width: 100%;
+        text-align: right
+    }
+    .contact_list{
+        font-size: 15px;
+    }
+    .bouquet-info_block{
+        display: block;
     }
 }
