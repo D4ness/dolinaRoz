@@ -100,7 +100,6 @@ header{
     height: 60px;
     /*background-color: #ffffff;*/
     color: #AED2C7;
-
     opacity: 0.4;
     font-size: 25px;
     transition: all 0.2s linear;
@@ -321,12 +320,16 @@ h2{
 
     position: relative;
 }
+.deli_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
 .deli_tittle{
     margin-top: 0;
     padding-top: 30px    ;
     color: white;
-    display: flex;
-    justify-content: flex-end;
 
 }
 .deli_content{
@@ -334,6 +337,8 @@ h2{
     text-align: right;
     padding: 30px 0 30px 0;
     color: white;
+    width: 600px;
+
 }
 
 
@@ -463,16 +468,13 @@ h2{
         width: 450px;
     }
 }
-@media (max-width: 767px) {
-    .map_container{
-        justify-content: center;
-    }
+ @media (max-width: 767px) {
 
     #bg_video{
-        transform: scale(0.55);
+        transform: scale(0.8);
     }
     #bg_block{
-        top: -250px;
+        top: -120px;
     }
     .container{
         max-width: none;
@@ -488,6 +490,12 @@ h2{
     .fa-whatsapp{
         font-size: 15px;
     }
+    #main_container{
+        height: 100vh;
+    }
+    .mainpage_content{
+
+    }
     .tittle{
         font-size: 30px;
     }
@@ -498,30 +506,50 @@ h2{
     h2{
         font-size: 30px;
     }
-    .navigation{
-        /*margin: 9vh 0px;*/
-    }
     .nav_but{
         width: 180px;
         height: 50px;
         font-size: 25px;
     }
-    .deli_content{
-        font-size: 15px;
-    }
-    #map{
-        width: 200px;
-    }
-    .map_container{
-        margin: 0;
-    }
-    .contact_text{
-        font-size: 15px;
-    }
     #back_top{
         bottom: 10px;
         right: 10px;
         font-size: 20px;
+    }
+    .deli_content{
+        font-size: 12px;
+        width: 250px;
+    }
+
+
+    .tab{
+        font-size: 12px;
+    }
+    .bouquet{
+        width: 150px;
+        height: auto;
+        display: flex;
+    }
+
+    .bouquet_image{
+        width: 150px;
+        height: 187px;
+    }
+    .bouquet-info_block{
+        width: 150px;
+        display: block;
+        margin-top: 107px;
+
+    }
+    .bouquet-info_text{
+        height: 80px;
+    }
+    .bouquet-info_price{
+        font-size: 10px;
+    }
+
+    .contact_text{
+        font-size: 15px;
     }
     .contact-item{
     }
@@ -535,7 +563,20 @@ h2{
     .contact_list{
         font-size: 15px;
     }
-    .bouquet-info_block{
-        display: block;
+    #map{
+        width: 200px;
+    }
+    .map_container{
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px)and(max-height: 570px ){
+    #bg_video{
+        transform: scale(0.55);
+    }
+    #bg_block{
+        top: -250px;
     }
 }
