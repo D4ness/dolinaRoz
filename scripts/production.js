@@ -16,3 +16,9 @@ const sorts = document.querySelector('#Сорта');
 nav_sorts.addEventListener('click', () => {
     scrollTo(sorts);
 })
+
+const nav_contact = document.getElementById('nav_contact');
+const contacts = document.querySelector('#Контакты');
+nav_contact.addEventListener('click', () => {
+    scrollTo(contacts);
+})

@@ -360,7 +360,6 @@ h2{
 .contact-item a{
     color: #71B092;
     text-decoration: none;
-    border-bottom: 2px #71B092 solid;
 }
 .contact-item{
     width: 100%;
@@ -370,9 +369,11 @@ h2{
 .contact-item_type{
     width: 200px;
     margin: 0 50px 20px 0px;
+    text-align: center;
+    display: flex;
 }
-.icon-width{
-    /*width: 50px;*/
+.contact_name{
+    margin-left: 15px;
 }
 .map_container{
     display: flex;
@@ -386,6 +387,8 @@ h2{
 .contact-item_value{
     line-height: 24px;
 }
+
+
 
 
         /*   Адаптив   */
@@ -569,6 +572,9 @@ h2{
     .map_container{
         justify-content: center;
         margin: 0;
+    }
+    .contact-item_type{
+        display: block;
     }
 }
 
