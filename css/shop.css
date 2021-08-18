@@ -310,6 +310,9 @@ h2{
     font-size: 20px;
 }
         /*   Доставка   */
+.truck_icon{
+    fill: white;
+}
 .delivery{
     background-color: #71B092;
     position: relative;
@@ -320,13 +323,17 @@ h2{
     align-items: flex-end;
 
 }
+.deli_content{
+    display: flex;
+    justify-content: space-between;
+}
 .deli_tittle{
     margin-top: 0;
     padding-top: 30px    ;
     color: white;
 
 }
-.deli_content{
+.deli_text{
     font-size: 30px;
     text-align: right;
     padding: 30px 0 30px 0;
@@ -455,7 +462,7 @@ h2{
     .tittle{
         font-size: 35px;
     }
-    .deli_content{
+    .deli_text{
         font-size: 25px;
     }
     .contact_list{
@@ -513,7 +520,7 @@ h2{
         right: 10px;
         font-size: 20px;
     }
-    .deli_content{
+    .deli_text{
         font-size: 12px;
         width: 250px;
     }
