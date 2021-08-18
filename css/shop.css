@@ -317,7 +317,6 @@ h2{
         /*   Доставка   */
 .delivery{
     background-color: #71B092;
-
     position: relative;
 }
 .deli_container{
@@ -566,6 +565,9 @@ h2{
     .contact_list{
         font-size: 15px;
     }
+    .contact_name{
+        margin: 0;
+    }
     #map{
         width: 200px;
     }
@@ -576,7 +578,17 @@ h2{
     .contact-item_type{
         display: block;
     }
-}
+     #back_top{
+         bottom: 30px;
+         left: 20px;
+         font-size: 30px;
+     }
+     .show_btn{
+         width: 30px;
+     }
+
+
+ }
 
 @media (max-width: 767px)and(max-height: 570px ){
     #bg_video{
