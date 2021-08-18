@@ -239,7 +239,7 @@ h2{
 /*}*/
 
 h3{
-    margin: 10px 0 10px;
+    margin: 0 0 20px;
     font-size: 35px;
 }
 h3:last-child{
@@ -278,10 +278,10 @@ li{
 .contact-item_type{
     width: 40%;
     margin: 0 50px 0px 0px;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*text-align: center;*/
+    padding: 5px 0;
+}
+.contact-item_type_bold{
+    font-weight: 800;
 }
 .contact-item_mini-block{
     display: flex;
@@ -295,6 +295,7 @@ li{
     /*align-items: center;*/
     /*justify-content: center;*/
     width: 60%;
+    margin: auto;
 }
 
 .prod-contact_container{

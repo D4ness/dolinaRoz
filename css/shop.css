@@ -10,23 +10,8 @@ body{
     line-height: 1.2;
     width: 100%;
 }
-
-/*@media (orientation: portrait) {*/
-/*    h1{*/
-/*        font-size: 60px;*/
-/*    }*/
-/*}*/
-section{
-    /*width: 100vw;*/
-}
 header{
-    /*width: 100%;*/
     text-align: center;
-    /*height: 100vh;*/
-    /*width: 100%;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
 }
 .container{
     max-width: 1200px;
@@ -273,6 +258,20 @@ h2{
     width: 230px;
     position: relative;
 }
+.bouquet-mix{
+    width: 230px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 20px 0px 20px;*/
+    margin: 20px 15px 20px 15px;
+    transition: all 0.2s linear;
+}
+.bouquet-mix_image{
+    width: 180px;
+}
 .bouquet-info_block{
     position: absolute;
     width: 230px;
@@ -312,6 +311,9 @@ h2{
         /*   Доставка   */
 .truck_icon{
     fill: white;
+    width: 512px;
+    height: 512px;
+
 }
 .delivery{
     background-color: #71B092;
@@ -321,15 +323,21 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
+
 .deli_content{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .deli_tittle{
+    display: flex;
+    justify-content: flex-end;
     margin-top: 0;
-    padding-top: 30px    ;
+    padding-top: 30px;
     color: white;
 
 }
@@ -375,6 +383,7 @@ h2{
 }
 .contact_name{
     margin-left: 15px;
+    text-align: left;
 }
 .map_container{
     display: flex;
@@ -386,7 +395,10 @@ h2{
     margin: 30px 0 30px;
 }
 .contact-item_value{
-    line-height: 24px;
+    line-height: 35px;
+}
+.contact-item_type_bold{
+    font-weight: 700;
 }
 
 
@@ -423,7 +435,14 @@ h2{
     .tittle{
         font-size: 65px;
     }
-
+    .truck_icon{
+        width: 300px;
+        height: 300px;
+    }
+    .deli_text{
+        width: 500px;
+        font-size: 25px;
+    }
     #map{
         width: 500px;
     }
@@ -462,8 +481,13 @@ h2{
     .tittle{
         font-size: 35px;
     }
+    .truck_icon{
+        width: 250px;
+        height: 250px;
+    }
     .deli_text{
-        font-size: 25px;
+        width: 400px;
+        font-size: 20px;
     }
     .contact_list{
         font-size: 25px;
@@ -520,11 +544,22 @@ h2{
         right: 10px;
         font-size: 20px;
     }
-    .deli_text{
-        font-size: 12px;
-        width: 250px;
+    .deli_content{
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
+     .truck_icon{
+         width: 160px;
+         height: 160px;
+     }
+    .deli_text{
+        font-size: 16px;
+        width: 300px;
+    }
+    .deli_container{
+        max-width: none;
+        padding: 5px;
+    }
 
     .tab{
         font-size: 12px;
@@ -539,6 +574,8 @@ h2{
         width: 150px;
         height: 187px;
     }
+
+
     .bouquet-info_block{
         width: 150px;
         display: block;
@@ -555,26 +592,25 @@ h2{
     .contact_text{
         font-size: 15px;
     }
-    .contact-item{
-    }
     .contact-item_type{
         width: 100px
     }
     .contact-item_value {
         width: 100%;
-        text-align: right
+        text-align: left;
     }
     .contact_list{
         font-size: 15px;
     }
     .contact_name{
         margin: 0;
+        text-align: center;
     }
     #map{
         width: 200px;
     }
     .map_container{
-        justify-content: center;
+        justify-content: left;
         margin: 0;
     }
     .contact-item_type{
