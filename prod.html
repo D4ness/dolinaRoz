@@ -12,28 +12,43 @@
 </head>
 <body>
 <section class="header">
-    <header class="container">
-        <div class="space"></div>
-        <div class="top_buttons">
+    <header>
+        <div id="bg_block" class="overlay">
+            <video id="bg_video" loop autoplay preload="auto" muted poster="images/bg_main_shop.jpg">
+                <source src="images/video_shop.mp4">
 
-                <a class="back" href="index.html">
-                    <div class="back_button">
-                    Назад
-                    <i class="fas fa-undo-alt" id="back_icon"></i>
-                    </div>
-                </a>
-
+            </video>
         </div>
-        <h1>Долина роз</h1>
-        <h2>Тепличный комбинат</h2>
-        <div class="navigation">
-            <a class="nav_but" id="nav_info">О нас</a>
-            <a class="nav_but" id="nav_sorts">Сорта</a>
-            <a class="nav_but" id="nav_contact">Контакты</a>
-            <a href="#" class="nav_but">Цены</a>
+        <div class="main_content">
+            <div id="main_container">
+                <div class="space"></div>
+                <div class="top_buttons">
+                    <a class="back" href="index.html">
+                        <div class="back_button">
+                            Назад
+                            <i class="fas fa-undo-alt" id="back_icon"></i>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="mainpage_content">
+                    <div class="mainpage_tittles">
+                        <h1>Долина Роз</h1>
+                        <h2>Теплчиный комбинат</h2>
+                    </div>
+                    <div class="navigation">
+                        <a class="nav_but" id="nav_info">О нас</a>
+                        <a class="nav_but" id="nav_sorts">Сорта</a>
+                        <a class="nav_but" id="nav_contact">Контакты</a>
+                        <a class="nav_but" id="nav_prices">Цены</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 </section>
+
 <div id="back_top" class="hide_btn">
     <i class="fas fa-arrow-circle-up"></i>
 </div>
@@ -184,9 +199,9 @@
     </div>
     </div>
 </section>
-<section class="contact white-bg">
+<section class="white-bg" id="Цены">
     <div class="container">
-        <div class="contact_tittle tittle">Цены</div>
+        <div class="price_tittle tittle">Цены</div>
     </div>
 </section>
 </body>
