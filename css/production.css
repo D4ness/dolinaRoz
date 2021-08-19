@@ -113,14 +113,14 @@ section{
 }
 h1{
     padding-top: 40px;
-    color: #AED2C7;
+    color: #FFF9B3;
     font-weight: 600;
     font-size: 100px;
     text-align: center;
 }
 h2{
     padding-top: 10px;
-    color: #AED2C7;
+    color: #FFF;
     font-weight: 400;
     font-size: 60px;
     text-align: center;
@@ -141,7 +141,7 @@ h2{
     align-items: center;
     width: 250px;
     height: 100px;
-    background-color: rgba(174,210,199,0.5);
+    background-color: rgba(255,249,179,0.5);
     color: white;
     text-decoration: none;
     font-size: 35px;
@@ -154,7 +154,7 @@ h2{
 }
 .nav_but:hover{
     color: black;
-    background-color: rgba(174,210,199,1);
+    background-color: rgba(255,249,179,1);
     bottom: 3px;
     left: 3px;
     cursor: pointer;
@@ -246,11 +246,11 @@ h3:last-child{
 }
 .contact_list{
     font-size: 26px;
-    color: #71B092;
+    color: #48211A;
     width: 60%;
 }
 .contact-item a{
-    color: #71B092;
+    color: #48211A;
     text-decoration: none;
 }
 
@@ -317,7 +317,7 @@ li{
 }
 .map_img{
     width: 400px;
-    border: 3px solid #71B092;
+    border: 3px solid #48211A;
 }
 #Цены{
     text-align: right;
