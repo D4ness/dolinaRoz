@@ -10,7 +10,7 @@ body{
 }
 #background{
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     /*background-image: url('../images/bg_main_page.jpg');*/
     position: absolute;
     z-index: 0;
@@ -43,12 +43,12 @@ body{
     align-items: center;
     /*justify-content: space-around;*/
     /*background-image: url('../images/bg_main_page.jpg');*/
-    background-color: #eee;
-    background-repeat: no-repeat;
+    /*background-color: #eee;*/
+    /*background-repeat: no-repeat;*/
 }
 
 h1{
-    margin: 150px 0;
+    margin: 100px 0;
     width: 100%;
     font-size: 120px;
     color: #fff;
@@ -58,9 +58,10 @@ h1{
 }
 .buttons{
     height: 50%;
+    width: 80%;
     margin: auto;
-    /*display: flex;*/
-    /*justify-content: center;*/
+    display: flex;
+    justify-content: center;
     /*width: 400px;*/
     /*height: 600px;*/
     /*margin-top: 150px;*/
@@ -123,6 +124,9 @@ a{
 }@media (max-width: 767px) {
     .button_text{
         font-size: 25px;
+    }
+    #background{
+        transform: scale(1.5);
     }
 }
 /*@media (max-width: 767px) {*/
