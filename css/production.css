@@ -78,7 +78,6 @@ section{
     border-radius: 10px;
     width: 200px;
     height: 60px;
-    background-color: #FFA343;
     opacity: 0.35;
     font-size: 25px;
     transition: all 0.2s linear;
@@ -289,6 +288,7 @@ li{
 }
 .contact_name{
     margin-left: 15px;
+    text-align: left;
 }
 .contact-item_value{
     /*display: flex;*/
@@ -354,17 +354,19 @@ li{
     .tittle{
         font-size: 65px;
     }
-
+    .info_img{
+        height: 250px;
+    }
     .map_img{
         width: 300px;
     }
 }
 @media (max-width: 992px) {
     #bg_video{
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
     #bg_block{
-        top: -220px;
+        top: -170px;
     }
     .container{
         max-width: 970px;
@@ -393,11 +395,15 @@ li{
     .tittle{
         font-size: 35px;
     }
-    .contact_list{
-        font-size: 25px;
+    .info_img{
+        height: 200px;
     }
-    #map{
-        width: 450px;
+    .contact_list{
+        font-size: 18px;
+    }
+    .map_img{
+        height: 200px;
+        width: auto;
     }
 }
 @media (max-width: 767px) {

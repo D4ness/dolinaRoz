@@ -400,7 +400,12 @@ h2{
 .contact-item_type_bold{
     font-weight: 700;
 }
-
+.mail_full{
+    display: block;
+}
+.mail_space{
+    display: none;
+}
 
 
 
@@ -634,5 +639,38 @@ h2{
     }
     #bg_block{
         top: -250px;
+    }
+}
+
+@media (max-width: 300px){
+    .tab{
+        font-size: 8px;
+    }
+    .deli_text{
+        font-size: 12px;
+        width: 100%;
+    }
+    .contact-item{
+        font-size: 10px;
+    }
+    .contact-item_type{
+        width: 120px;
+        margin: 10px;
+    }
+    .bouquet-mix{
+        height: 280px;
+    }
+    .bouquet-mix_image{
+        width: 150px;
+    }
+    .mail_space{
+        display: block;
+    }
+    .mail_full{
+        display: none;
+    }
+    #map{
+        height: 150px;
+        width: auto;
     }
 }
