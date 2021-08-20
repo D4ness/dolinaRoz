@@ -61,6 +61,7 @@ section{
     margin: 0 auto;
     padding: 0 50px;
     /*left: 50%;*/
+    min-height: 100vh;
 }
 .space{
     height: 30px;
@@ -95,7 +96,7 @@ section{
     bottom: 50px;
     right: 50px;
     font-size: 50px;
-    color: #AED2C7;
+    color: #48211A;;
     z-index: 5;
     cursor: pointer;
     opacity: 0.5;
