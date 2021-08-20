@@ -62,11 +62,19 @@ window.addEventListener(`resize`, event => {
 }, false);
 
 // Инфо о букетах
-function showBouquetInfo(bouquet){
-        console.log(bouquet.innerHTML);
+// function showBouquetInfo(bouquet){
+//         console.log(bouquet.innerHTML);
+//
+// }
 
-}
+// $(document).ready(function (){
+//         call(showBouquetInfo());
+// });
 
-$(document).ready(function (){
-        call(showBouquetInfo());
-});
+let mask = document.querySelector('.mask');
+window.addEventListener('load', () =>{
+        mask.classList.add('hide_mask');
+        setTimeout( () =>{
+                mask.remove();
+        }, 800)
+})
