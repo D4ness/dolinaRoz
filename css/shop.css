@@ -149,7 +149,7 @@ h1{
 h2{
     position: relative;
     padding-top: 10px;
-    color: #71B092;
+    color: white;
     font-weight: 400;
     font-size: 60px;
     z-index: 4;
@@ -335,9 +335,11 @@ h2{
     position: relative;
 }
 .deli_container{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
