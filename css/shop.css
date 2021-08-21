@@ -10,47 +10,6 @@ body{
     line-height: 1.2;
     width: 100%;
 }
-.mask{
-    height: 100%;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    background: rgba(0,0,0,1);
-    /*filter: blur(10px);*/
-    z-index: 100;
-    transition: all 0.8s linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hide_mask{
-    opacity: 0;
-}
-.pre-loader{
-    width: 150px;
-    height: 150px;
-    /*border: 28px solid #AED2C7;*/
-    /*border-radius: 50%;*/
-    /*border-left-color: #71B092;*/
-    animation: pre-loader 2s linear infinite;
-    background-image: url("../images/preloader_left150.png");
-    /*color: #AED2C7;*/
-}
-@keyframes pre-loader {
-    /*100%{*/
-    /*    transform: rotate(360deg);*/
-    /*}*/
-    33%{
-        background-image: url("../images/preloader_mid150.png");
-    }
-    66%{
-        background-image: url("../images/preloader_right150.png");
-    }
-    100%{
-        background-image: url("../images/preloader_left150.png");
-    }
-
-}
 header{
     text-align: center;
 }
@@ -84,14 +43,14 @@ header{
     align-items: center;
 }
 #bg_video{
-    height: 100%;
+    min-height: 100%;
     width: auto;
 }
 
 .main_content{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 #main_container{
     /*position: absolute;*/
@@ -346,9 +305,24 @@ h2{
     font-size: 24px;
     text-align: center;
 }
+.bouquet_name a{
+    font-size: 18px;
+}
 .whatsapp_bouquet{
     font-size: 20px;
 }
+.wa-button_mixed{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mix-text{
+    margin-right: 10px;
+}
+
         /*   Доставка   */
 .truck_icon{
     fill: white;
@@ -620,8 +594,6 @@ h2{
         width: 150px;
         height: 187px;
     }
-
-
     .bouquet-info_block{
         width: 150px;
         display: block;
@@ -634,7 +606,9 @@ h2{
     .bouquet-info_price{
         font-size: 10px;
     }
-
+     .mix-text{
+         font-size: 14px;
+     }
     .contact_text{
         font-size: 15px;
     }
