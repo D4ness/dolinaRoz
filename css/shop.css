@@ -68,6 +68,7 @@ header{
 .top_buttons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .back_button{
     position: relative;
@@ -260,7 +261,7 @@ h2{
 }
 .bouquet-mix{
     width: 230px;
-    height: 320px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,7 +271,8 @@ h2{
     transition: all 0.2s linear;
 }
 .bouquet-mix_image{
-    width: 180px;
+    width: 200px;
+    height: auto;
 }
 .bouquet-info_block{
     position: absolute;
@@ -423,7 +425,9 @@ h2{
 .mail_space{
     display: none;
 }
-
+.phone_br{
+    display: none;
+}
 
 
         /*   Адаптив   */
@@ -576,7 +580,7 @@ h2{
      }
     .deli_text{
         font-size: 16px;
-        width: 300px;
+        width: 80%;
     }
     .deli_container{
         max-width: none;
@@ -646,7 +650,9 @@ h2{
      .show_btn{
          width: 30px;
      }
-
+    .phone_br{
+        display: block;
+    }
 
  }
 
