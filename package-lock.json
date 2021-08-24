@@ -1,0 +1,13 @@
+{
+  "name": "first-app",
+  "version": "0.1.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "scroll-lock": {
+      "version": "2.1.5",
+      "resolved": "https://registry.npmjs.org/scroll-lock/-/scroll-lock-2.1.5.tgz",
+      "integrity": "sha512-GN8Lp0AzXbkrPFUUNkMUruiiv019UvarNKE/SnXi+AxZRjMnDc2R22VB9RcUtL4P/uub04cKibmpHKIKTyWwYQ=="
+    }
+  }
+}

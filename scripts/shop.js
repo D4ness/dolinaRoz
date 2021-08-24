@@ -1,3 +1,14 @@
+// import scrollLock from '../node_modules/scroll-lock/src'
+// scrollLock.disablePageScroll();
+//...
+
+//require
+// const scrollLock = require('scroll-lock');
+// scrollLock.disablePageScroll();
+
+// const $scrollableElement = document.querySelector('.my-scrollable-element');
+// enablePageScroll($scrollableElement);
+
 function changeBgShop (){
         const bg =  document.getElementById('background');
         bg.style.backgroundImage = "url('images/bg_main_shop.png')";
