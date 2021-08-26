@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Долина роз</title>
+    <script defer src="scripts/preloader.js"></script>
+    <style>
+        .mask{
+            height: 100%;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            background: rgba(255,255,255,1);
+            /*filter: blur(10px);*/
+            z-index: 100;
+            transition: opacity 0.8s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hide_mask{
+            opacity: 0;
+        }
+        .pre-loader{
+            width: 150px;
+            height: 150px;
+            animation: pre-loader 2s linear infinite;
+            background-image: url("images/preloader_main1.png");
+
+        }
+        @keyframes pre-loader {
+            /*100%{*/
+            /*    transform: rotate(360deg);*/
+            /*}*/
+            50%{
+                background-image: url("images/preloader_main2.png");
+            }
+            100%{
+                background-image: url("images/preloader_main1.png");
+            }
+
+        }
+    </style>
     <link href="css/main_page.css" rel="stylesheet">
     <link href="css/fonts.css">
     <script defer src="scripts/shop.js"></script>
+
 </head>
-<body>
+<body style="background: url('images/bg_main_page.jpg') no-repeat fixed; -webkit-background-size: cover; background-size: cover;">
+<div class="mask"  >
+    <div class="pre-loader"></div>
+</div>
 <div id="pseudo-bg"></div>
-<div id="background" style="background-image: url('images/bg_main_page.jpg'); background-repeat: no-repeat"></div>
+<!--<div id="background" style="background-image: url('images/bg_main_page.jpg'); background-repeat: no-repeat"></div>-->
 <section class="main_page">
     <div class="tittle"><h1>Долина Роз</h1></div>
     <div class="buttons">

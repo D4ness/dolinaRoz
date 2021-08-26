@@ -4,9 +4,17 @@
     box-sizing: border-box;
     margin: 0 0 0 0;
 }
+html {
+    /*height: 100%;*/
+    /*margin: 0;*/
+
+    /*background-repeat: no-repeat;*/
+}
 body{
     /*max-height: 1024px;*/
     font-family: Circe, sans-serif;
+    /*background-image: url("../images/bg_main_page.jpg");*/
+    /*background-size: 100% 100%;*/
 }
 #background{
     width: 100%;

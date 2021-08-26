@@ -3,6 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Комбинат Долина роз</title>
+    <script defer src="scripts/preloader.js"></script>
+    <style>
+        .mask{
+            height: 100%;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            background: rgba(0,0,0,1);
+            /*filter: blur(10px);*/
+            z-index: 100;
+            transition: opacity 0.8s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hide_mask{
+            opacity: 0;
+        }
+        .pre-loader{
+            width: 150px;
+            height: 150px;
+            animation: pre-loader 2s linear infinite;
+            background-image: url("images/preloader_prod1.png");
+
+        }
+        @keyframes pre-loader {
+            /*100%{*/
+            /*    transform: rotate(360deg);*/
+            /*}*/
+            50%{
+                background-image: url("images/preloader_prod2.png");
+            }
+            100%{
+                background-image: url("images/preloader_prod1.png");
+            }
+
+        }
+    </style>
     <link href="css/production.css" rel="stylesheet">
     <link href="css/fonts.css">
     <script defer src="scripts/production.js"></script>
@@ -11,6 +49,9 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
+<div class="mask"  >
+    <div class="pre-loader"></div>
+</div>
 <section class="header">
     <header>
         <div id="bg_block" class="overlay">

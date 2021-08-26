@@ -9,6 +9,7 @@ body{
     color: black;
     line-height: 1.2;
     width: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 header{
     text-align: center;

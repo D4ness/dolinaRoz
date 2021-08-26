@@ -1,14 +1,8 @@
-// import scrollLock from '../node_modules/scroll-lock/src'
-// scrollLock.disablePageScroll();
-//...
-
-//require
-// const scrollLock = require('scroll-lock');
-// scrollLock.disablePageScroll();
-
-// const $scrollableElement = document.querySelector('.my-scrollable-element');
-// enablePageScroll($scrollableElement);
-
+//
+// import smoothscroll from 'smoothscroll-polyfill/dist/smoothscroll.js';
+//
+// // kick off the polyfill!
+// smoothscroll.polyfill();
 function changeBgShop (){
         const bg =  document.getElementById('background');
         bg.style.backgroundImage = "url('images/bg_main_shop.png')";
@@ -82,10 +76,3 @@ window.addEventListener(`resize`, event => {
 //         call(showBouquetInfo());
 // });
 
-let mask = document.querySelector('.mask');
-window.addEventListener('load', () =>{
-        mask.classList.add('hide_mask');
-        setTimeout( () =>{
-                mask.remove();
-        }, 800)
-})

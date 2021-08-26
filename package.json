@@ -5,9 +5,10 @@
   "requires": true,
   "dependencies": {
     "scroll-lock": {
-      "version": "2.1.5",
+      "integrity": "sha512-GN8Lp0AzXbkrPFUUNkMUruiiv019UvarNKE/SnXi+AxZRjMnDc2R22VB9RcUtL4P/uub04cKibmpHKIKTyWwYQ==",
       "resolved": "https://registry.npmjs.org/scroll-lock/-/scroll-lock-2.1.5.tgz",
-      "integrity": "sha512-GN8Lp0AzXbkrPFUUNkMUruiiv019UvarNKE/SnXi+AxZRjMnDc2R22VB9RcUtL4P/uub04cKibmpHKIKTyWwYQ=="
-    }
+      "version": "2.1.5"
+    },
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }
