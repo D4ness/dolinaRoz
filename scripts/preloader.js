@@ -3,5 +3,5 @@ window.addEventListener('load', () =>{
     mask.classList.add('hide_mask');
     setTimeout( () =>{
         mask.remove();
-    }, 800)
+    }, 500)
 })
