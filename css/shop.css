@@ -476,10 +476,10 @@ h2{
 }
 @media (max-width: 992px) {
     #bg_video{
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
     #bg_block{
-        top: -220px;
+        top: -180px;
     }
     .container{
         max-width: 970px;
@@ -488,6 +488,10 @@ h2{
         font-size: 60px;
     }
     h2{
+        font-size: 40px;
+    }
+    #back_top{
+        right: 10px;
         font-size: 40px;
     }
     .navigation{
