@@ -13,6 +13,7 @@ html {
 body{
     /*max-height: 1024px;*/
     font-family: Circe, sans-serif;
+    transition: all 0.2s linear;
     /*background-image: url("../images/bg_main_page.jpg");*/
     /*background-size: 100% 100%;*/
 }

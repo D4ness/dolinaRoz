@@ -4,17 +4,26 @@
 // // kick off the polyfill!
 // smoothscroll.polyfill();
 function changeBgShop (){
-        const bg =  document.getElementById('background');
-        bg.style.backgroundImage = "url('images/bg_main_shop.png')";
+        const bg =  document.getElementById('body');
+        setTimeout(()=>{
+                bg.style.backgroundImage = "url('images/bg_main_shop.jpg')";
+        }, 100)
+        // bg.style.background = "url('images/bg_main_shop.png') no-repeat";
+        // bg.style.webkitBackgroundSize = "cover";
+        // bg.style.backgroundSize = "cover";
 }
 function changeBgProd (){
-        const bg =  document.getElementById('background');
-        bg.style.backgroundImage = "url('images/bg_main_prod.jpg')";
+        const bg =  document.getElementById('body');
+        setTimeout(()=>{
+                bg.style.backgroundImage = "url('images/bg_main_prod.jpg')";
+        }, 100)
 }
 
 function changeBgMain(){
-        const bg =  document.getElementById('background');
-        bg.style.backgroundImage = "url('images/bg_main_page.jpg')";
+        const bg =  document.getElementById('body');
+        setTimeout(()=>{
+                bg.style.backgroundImage = "url('images/bg_main.jpg')";
+        }, 100)
 }
 
 // ПРОКРУТКА

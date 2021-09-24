@@ -371,6 +371,9 @@ h2{
 
 
         /*    Контакты    */
+.contacts{
+    min-height: 100vh;
+}
 .contact_tittle{
     color: #71B092;
 }

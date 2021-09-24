@@ -325,9 +325,49 @@ li{
     border: 3px solid #48211A;
 }
 #Цены{
+    /*text-align: right;*/
+    min-height: 100vh;
+}
+.price_tittle{
     text-align: right;
 }
+.price_content{
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
 
+.price_container{
+    margin: 0;
+    width: 70%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*type: */
+}
+.price_img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.price_img img{
+    width: 250px;
+    height: 250px;
+}
+.price_block{
+    font-size: 40px;
+}
+.price_link:hover{
+    color: #48211A;
+    border-bottom: solid 1px #48211A;
+
+}
+.price_link{
+    color: black;
+    text-decoration: none;
+}
 
 @media (max-width: 1200px) {
     .main_content{
@@ -507,7 +547,28 @@ li{
         width: 200px;
         border: 1px solid #71B092;
     }
-
+    .price_container{
+        height: 300px;
+        width: 100%;
+        align-items: center;
+    }
+    .price_img{
+        width: 100%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+    .price_block{
+        line-height: 25px;
+        text-align: center;
+    }
+    .price_link{
+        font-size: 25px;
+    }
+    .price_img img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 767px)and(max-height: 570px ){
