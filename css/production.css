@@ -443,6 +443,9 @@ li{
     .tittle{
         font-size: 35px;
     }
+    .sort-name{
+        margin-top: 20px;
+    }
     .info_img{
         height: 200px;
     }
