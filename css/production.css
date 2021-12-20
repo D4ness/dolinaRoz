@@ -87,6 +87,7 @@ section{
     opacity: 1;
 }
 .back{
+    display: none;
     color: white;
     text-decoration: none;
     transition: all 0.1s linear;
@@ -291,6 +292,12 @@ li{
 .contact-item_mini-block{
     display: flex;
     align-items: center;
+}
+.contact-tittle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
 }
 .contact_name{
     margin-left: 15px;
